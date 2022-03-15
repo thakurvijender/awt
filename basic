@@ -10,16 +10,19 @@ public class java1 extends Frame {
         Button b = new Button("submit");
         TextField txt = new TextField();
         TextArea textArea= new TextArea();
+        Checkbox chbox = new Checkbox("yes",true);
         lab1=new Label("this is a text field");
-        lab2=new Label("this is a button");
+        lab2=new Label("do you wanna submit");
 
         lab1.setBounds(1,55,100,40);
-
+        lab2.setBounds(80,250,100,40);
         txt.setBounds(100,55,100,40);
         textArea.setBounds(100,180,100,50);
 
         b.setBounds(100,100,80,30);
-
+        chbox.setBounds(180,262,100,20);
+        add(lab2);
+        add(chbox);
         add(lab1);
         add(b);
         add(txt);
