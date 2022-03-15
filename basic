@@ -1,0 +1,48 @@
+import java.awt.*;
+
+
+public class java1 extends Frame {
+
+
+    java1() {
+
+        Label lab1,lab2;
+        Button b = new Button("submit");
+        TextField txt = new TextField();
+        TextArea textArea= new TextArea();
+        lab1=new Label("this is a text field");
+        lab2=new Label("this is a button");
+
+        lab1.setBounds(1,55,100,40);
+
+        txt.setBounds(100,55,100,40);
+        textArea.setBounds(100,180,100,50);
+
+        b.setBounds(100,100,80,30);
+
+        add(lab1);
+        add(b);
+        add(txt);
+        add(textArea);
+
+        setSize(300,300);
+
+
+        setTitle("This is our basic AWT example");
+
+        // no layout manager
+       setLayout(null);
+
+        // now frame will be visible, by default it is not visible
+        setVisible(true);
+    }
+
+    // main method
+    public static void main(String args[]) {
+
+// creating instance of Frame class
+        java1 f = new java1();
+
+    }
+
+}
